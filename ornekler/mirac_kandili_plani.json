@@ -1,0 +1,27 @@
+{
+  "_aciklama": "Miraç Kandili röportajı -> Instagram Reels (9:16). Filigranlı Renderforest girişi (0-15 sn) ve Pixiz kapanışı (174 sn sonrası) çıkarıldı, yerine filigransız başlık ve kapanış kartı kondu.",
+  "cikti": "cikti/mirac_kandili_reels.mp4",
+  "oran": "9:16",
+  "sigdirma": "bulanik",
+  "iyilestir": {"goruntu": true, "ses": true},
+  "gecis": {"tur": "fade", "sure": 0.5},
+  "ses_normalize": true,
+  "klipler": [
+    {
+      "dosya": "ham_video/MİRAÇ KANDİLİ.mp4",
+      "bas": 15.1,
+      "son": 173.9,
+      "yazilar": [
+        {"metin": "Eğirdir'in nabzını yokladık", "konum": 0.20, "boyut": 0.75, "kutu": false},
+        {"metin": "MİRAÇ KANDİLİ NEDİR?", "konum": 0.255, "boyut": 1.15, "renk": "#FFD54A", "kutu": false}
+      ]
+    },
+    {
+      "kart": {"renk": "#0B2545", "sure": 3.5},
+      "yazilar": [
+        {"metin": "Miraç Kandiliniz\nmübarek olsun", "konum": "orta", "boyut": 1.2, "renk": "#FFD54A", "kutu": false},
+        {"metin": "İzlediğiniz için teşekkürler", "konum": "alt", "boyut": 0.8, "kutu": false}
+      ]
+    }
+  ]
+}

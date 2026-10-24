@@ -49,6 +49,10 @@ FONT_ADAYLARI = (
     "C:/Windows/Fonts/arialbd.ttf",
     "C:/Windows/Fonts/segoeuib.ttf",
 )
+# Konuşma gürültüsü temizleme modeli (RNNoise, ffmpeg arnndn). İlk kullanımda indirilir.
+RNNOISE_URL = ("https://raw.githubusercontent.com/GregorR/rnnoise-models/master/"
+               "somnolent-hogwash-2018-09-01/sh.rnnn")
+RNNOISE_YOLU = Path.home() / ".cache" / "video-olusturucu" / "sh.rnnn"
 
 # Altyazı (libass) font adını dosya adından değil aile adından bulur.
 FONT_AILELERI = {
@@ -121,6 +125,29 @@ def font_bul(tercih=None):
     raise KurguHatasi("Yazı için font bulunamadı. Plana \"font\": \"/yol/font.ttf\" ekleyin.")
 
 
+def rnnoise_modeli():
+    """Model dosyasını indirir; indirilemezse None döner (afftdn'e düşülür)."""
+    if RNNOISE_YOLU.is_file():
+        return RNNOISE_YOLU
+    try:
+        import urllib.request
+        RNNOISE_YOLU.parent.mkdir(parents=True, exist_ok=True)
+        gecici = RNNOISE_YOLU.with_suffix(".indiriliyor")
+        urllib.request.urlretrieve(RNNOISE_URL, gecici)
+        gecici.replace(RNNOISE_YOLU)
+        return RNNOISE_YOLU
+    except Exception as hata:  # ağ yoksa basit FFT gürültü azaltmaya geç
+        print(f"Uyarı: RNNoise modeli indirilemedi ({hata}); basit gürültü azaltma kullanılacak.")
+        return None
+
+
+def iyilestirme_ayari(deger):
+    """true / false / {"goruntu": bool, "ses": bool} -> (goruntu, ses)"""
+    if isinstance(deger, dict):
+        return bool(deger.get("goruntu", False)), bool(deger.get("ses", False))
+    return bool(deger), bool(deger)
+
+
 def atempo_zinciri(hiz):
     """atempo 0.5-2.0 aralığını kabul eder; dışındaki hızları zincirler."""
     filtreler = []
@@ -136,15 +163,15 @@ def atempo_zinciri(hiz):
 
 def sigdirma_filtresi(mod, gen, yuk):
     if mod == "kirp":
-        return f"scale={gen}:{yuk}:force_original_aspect_ratio=increase,crop={gen}:{yuk}"
+        return f"scale={gen}:{yuk}:force_original_aspect_ratio=increase:flags=lanczos,crop={gen}:{yuk}"
     if mod == "sigdir":
-        return (f"scale={gen}:{yuk}:force_original_aspect_ratio=decrease,"
+        return (f"scale={gen}:{yuk}:force_original_aspect_ratio=decrease:flags=lanczos,"
                 f"pad={gen}:{yuk}:(ow-iw)/2:(oh-ih)/2:color=black")
     if mod == "bulanik":
         return (f"split[arka][on];"
                 f"[arka]scale={gen}:{yuk}:force_original_aspect_ratio=increase,crop={gen}:{yuk},"
                 f"boxblur=25:3,eq=brightness=-0.08[arka2];"
-                f"[on]scale={gen}:{yuk}:force_original_aspect_ratio=decrease[on2];"
+                f"[on]scale={gen}:{yuk}:force_original_aspect_ratio=decrease:flags=lanczos[on2];"
                 f"[arka2][on2]overlay=(W-w)/2:(H-h)/2")
     raise KurguHatasi(f"Bilinmeyen sığdırma modu: {mod} (seçenekler: {', '.join(SIGDIRMA_MODLARI)})")
 
@@ -164,6 +191,16 @@ class Calisma:
             shutil.copy(font_bul(self._font_kaynak), self.klasor / "font.ttf")
             self._font_hazir = True
         return "font.ttf"
+
+    def gurultu_filtresi(self):
+        if not hasattr(self, "_gurultu"):
+            model = rnnoise_modeli()
+            if model:
+                shutil.copy(model, self.klasor / "rnnoise.rnnn")
+                self._gurultu = "arnndn=m=rnnoise.rnnn:mix=0.9"
+            else:
+                self._gurultu = "afftdn=nf=-25"
+        return self._gurultu
 
     def yeni_ad(self, onek, uzanti):
         self._sayac += 1
@@ -193,8 +230,11 @@ def yazi_filtresi(calisma, yazi, gen, yuk):
         "orta": "(h-text_h)/2",
         "alt": "h*0.78-text_h",
     }
-    if konum not in y_ifadeleri:
-        raise KurguHatasi(f"Bilinmeyen yazı konumu: {konum} (ust, orta, alt)")
+    if isinstance(konum, (int, float)):
+        # Sayı: ekran yüksekliğinin oranı (0.0 = en üst, 1.0 = en alt)
+        y_ifadeleri[konum] = f"h*{float(konum)}"
+    elif konum not in y_ifadeleri:
+        raise KurguHatasi(f"Bilinmeyen yazı konumu: {konum} (ust, orta, alt veya 0-1 arası sayı)")
     renk = yazi.get("renk", "white")
     parcalar = [
         f"drawtext=fontfile={calisma.font()}",
@@ -220,13 +260,16 @@ def yazi_filtresi(calisma, yazi, gen, yuk):
 
 # --- klip işleme -----------------------------------------------------------
 
-def klip_isle(calisma, klip, gen, yuk, varsayilan_sigdirma, plan_klasoru):
+def klip_isle(calisma, klip, gen, yuk, varsayilan_sigdirma, plan_klasoru, varsayilan_iyilestir=False):
     """Tek bir klibi (video / görsel / kart) hedef formatta ara dosyaya çevirir."""
     cikti = calisma.yeni_ad("klip", "mp4")
     girdiler = []
     sigdirma = klip.get("sigdirma", varsayilan_sigdirma)
     hiz = float(klip.get("hiz", 1.0))
     ses_seviyesi = float(klip.get("ses", 1.0))
+    goruntu_iyilestir, ses_temizle = iyilestirme_ayari(klip.get("iyilestir", varsayilan_iyilestir))
+    # Sıkıştırma gürültüsünü azalt (büyütmeden önce), büyüttükten sonra keskinleştir.
+    on_filtre = "hqdn3d=1.5:1.5:6:6," if goruntu_iyilestir else ""
 
     if "kart" in klip:
         kart = klip["kart"] or {}
@@ -264,13 +307,15 @@ def klip_isle(calisma, klip, gen, yuk, varsayilan_sigdirma, plan_klasoru):
             raise KurguHatasi(f"{yol.name}: 'son' ({son}) 'bas' ({bas}) değerinden büyük olmalı.")
         sure = (son - bas) / hiz
         girdiler += ["-ss", f"{bas}", "-t", f"{son - bas}", "-i", str(yol)]
-        video_zinciri = f"[0:v]{sigdirma_filtresi(sigdirma, gen, yuk)}"
+        video_zinciri = f"[0:v]{on_filtre}{sigdirma_filtresi(sigdirma, gen, yuk)}"
         if hiz != 1.0:
             video_zinciri += f",setpts=PTS/{hiz}"
         ses_var = bilgi["ses_var"] and ses_seviyesi > 0
     else:
         raise KurguHatasi(f"Klipte 'dosya', 'gorsel' veya 'kart' alanı olmalı: {klip}")
 
+    if goruntu_iyilestir:
+        video_zinciri += ",unsharp=5:5:0.7:3:3:0.0,eq=contrast=1.04:saturation=1.10"
     video_zinciri += f",fps={FPS},setsar=1"
     for yazi in klip.get("yazilar", []):
         filtre = yazi_filtresi(calisma, yazi, gen, yuk)
@@ -281,6 +326,10 @@ def klip_isle(calisma, klip, gen, yuk, varsayilan_sigdirma, plan_klasoru):
     if ses_var:
         ses_zinciri = "[0:a]"
         ses_zinciri += atempo_zinciri(hiz) + "," if hiz != 1.0 else ""
+        if ses_temizle:
+            # Uğultuyu kes, gürültüyü temizle, konuşma seviyesini dengele.
+            ses_zinciri += (f"aresample={SES_HIZI},highpass=f=80,{calisma.gurultu_filtresi()},"
+                            "acompressor=threshold=0.1:ratio=3:attack=10:release=250:makeup=2,")
         ses_zinciri += f"volume={ses_seviyesi},"
     else:
         girdiler += ["-f", "lavfi", "-t", f"{sure}", "-i", f"anullsrc=r={SES_HIZI}:cl=stereo"]
@@ -445,7 +494,8 @@ def plan_uygula(plan, plan_klasoru=Path(".")):
         for i, klip in enumerate(klipler, 1):
             ad = klip.get("dosya") or klip.get("gorsel") or "kart"
             print(f"[{i}/{len(klipler)}] işleniyor: {ad}")
-            ara_dosyalar.append(klip_isle(calisma, klip, gen, yuk, sigdirma, plan_klasoru))
+            ara_dosyalar.append(klip_isle(calisma, klip, gen, yuk, sigdirma, plan_klasoru,
+                                          plan.get("iyilestir", False)))
         print("Klipler birleştiriliyor...")
         birlesik = klipleri_birlestir(calisma, ara_dosyalar, plan.get("gecis"))
         print("Müzik / altyazı / ses ayarı...")
