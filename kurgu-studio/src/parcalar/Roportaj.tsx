@@ -13,10 +13,12 @@ import {
 } from "remotion";
 import { ALTIN, ALTIN_PARLAK, AltinTozu, Gren, Hilal, IsikSizmasi, Vinyet } from "./Efektler";
 import { KelimeKelime, SANS } from "./Yazi";
+import { Altyazi } from "./Altyazi";
 import { BOLUMLER, Bolum, GECIS_SURE, KART_SURE, ROPORTAJ } from "../zaman";
 
 // Video çerçevesinin konumu (dikey ekranın ortası, 16:9).
-const KUTU = { sol: 30, genislik: 1020, yukseklik: 574, ust: Math.round((1920 - 574) / 2) };
+// Instagram'ın alt arayüzüne (yaklaşık son 320 piksel) yazı denk gelmesin diye kutu biraz yukarıda.
+const KUTU = { sol: 30, genislik: 1020, yukseklik: 574, ust: 520 };
 const GECISLER = ["ac", "kay", "zoom"] as const;
 
 const gecisTuru = (b: Bolum) => (b.no === 1 ? null : GECISLER[(b.no - 2) % GECISLER.length]);
@@ -227,6 +229,7 @@ export const Roportaj: React.FC = () => {
       ) : null}
 
       <IlerlemeNoktalari aktif={bolum.no} />
+      <Altyazi ust={KUTU.ust + KUTU.yukseklik + 300} />
 
       {BOLUMLER.map((b) => (
         <Sequence key={b.no} from={b.bas + (b.no === 1 ? 12 : 8)} durationInFrames={KART_SURE} layout="none">
