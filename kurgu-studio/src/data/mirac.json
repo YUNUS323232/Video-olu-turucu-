@@ -1,0 +1,15 @@
+{
+  "_aciklama": "Zamanlar orijinal videoya göredir (saniye). 'sorular' dizisi röportaj sırasıyla doldurulur; boş bırakılan röportajda soru kartı yerine numara kartı çıkar.",
+  "kaynak": "../ornekler/ham_video/MİRAÇ KANDİLİ.mp4",
+  "bas": 15.1,
+  "son": 173.9,
+  "kesimler": [31.2, 47.0, 57.1, 89.1, 95.1, 121.8, 128.8, 137.8, 153.9],
+  "ust_baslik": "Eğirdir'in nabzını yokladık",
+  "baslik": ["MİRAÇ", "KANDİLİ"],
+  "alt_baslik": "nedir?",
+  "konum": "Eğirdir",
+  "hazirlayan": "12-A",
+  "sorular": [],
+  "kapanis": ["Miraç Kandiliniz", "mübarek olsun"],
+  "ek_goruntuler": []
+}

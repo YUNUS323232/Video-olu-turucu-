@@ -1,0 +1,22 @@
+{
+  "name": "kurgu-studio",
+  "private": true,
+  "description": "Remotion ile hareketli röportaj kurgusu (açılış, soru kartları, geçişler, kapanış).",
+  "scripts": {
+    "hazirla": "python3 hazirla.py",
+    "studio": "remotion studio",
+    "render": "remotion render src/index.ts MiracKandili cikti/mirac_kandili_reels.mp4"
+  },
+  "dependencies": {
+    "@fontsource/cinzel": "^5.1.0",
+    "@fontsource/montserrat": "^5.1.0",
+    "@remotion/cli": "4.0.290",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.290"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}
