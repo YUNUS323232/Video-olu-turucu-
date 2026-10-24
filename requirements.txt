@@ -1,0 +1,3 @@
+# Kurgu aracı için zorunlu bağımlılık yok (sadece ffmpeg).
+# Otomatik altyazı için:
+faster-whisper>=1.0

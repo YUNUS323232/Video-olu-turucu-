@@ -1,0 +1,41 @@
+{
+  "_aciklama": "Ham çekimden 9:16 tanıtım videosu. Dosya yolları bu JSON dosyasına göredir. '_' ile başlayan alanlar yok sayılır.",
+  "cikti": "cikti/tanitim_reels.mp4",
+  "oran": "9:16",
+  "sigdirma": "bulanik",
+  "gecis": {"tur": "fade", "sure": 0.3},
+  "muzik": {"dosya": "muzik.mp3", "ses": 0.25, "ducking": true},
+  "altyazi": {"dil": "tr", "model": "small"},
+  "ses_normalize": true,
+  "klipler": [
+    {
+      "dosya": "ham_video/dukkan_giris.mp4",
+      "bas": "0:02",
+      "son": "0:05",
+      "sigdirma": "kirp",
+      "yazilar": [{"metin": "Şehrin en taze kahvesi", "konum": "ust", "bas": 0, "son": 2.5}]
+    },
+    {
+      "dosya": "ham_video/konusma.mp4",
+      "bas": 4,
+      "son": 16
+    },
+    {
+      "dosya": "ham_video/urun_yakin.mp4",
+      "bas": 0,
+      "son": 3,
+      "hiz": 0.75,
+      "ses": 0
+    },
+    {
+      "gorsel": "urun.jpg",
+      "sure": 2.5,
+      "zoom": true,
+      "yazilar": [{"metin": "İlk siparişe %20 indirim", "konum": "alt"}]
+    },
+    {
+      "kart": {"renk": "#111111", "sure": 2.5},
+      "yazilar": [{"metin": "Hemen sipariş ver\nkahvedukkani.com", "konum": "orta", "boyut": 1.2}]
+    }
+  ]
+}
