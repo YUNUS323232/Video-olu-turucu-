@@ -397,6 +397,14 @@ def srt_zamani(saniye):
     return f"{sa:02d}:{d:02d}:{s:02d},{ms:03d}"
 
 
+def ses_oku(yol):
+    """Sesi ffmpeg ile 16 kHz mono float diziye çözer (faster-whisper'ın PyAV sürüm sorunlarını aşar)."""
+    import numpy as np
+    sonuc = subprocess.run(["ffmpeg", "-v", "error", "-i", str(yol), "-f", "f32le", "-ac", "1", "-ar", "16000", "-"],
+                           stdout=subprocess.PIPE, check=True)
+    return np.frombuffer(sonuc.stdout, dtype=np.float32)
+
+
 def altyazi_uret(video_yolu, srt_yolu, dil="tr", model="small"):
     try:
         from faster_whisper import WhisperModel
@@ -404,7 +412,7 @@ def altyazi_uret(video_yolu, srt_yolu, dil="tr", model="small"):
         raise KurguHatasi("Altyazı için önce kurun: pip install faster-whisper") from hata
     print(f"Konuşma metne çevriliyor (model: {model}, ilk seferde model indirilir)...")
     whisper = WhisperModel(model, device="auto", compute_type="int8")
-    parcalar, _ = whisper.transcribe(str(video_yolu), language=dil, vad_filter=True)
+    parcalar, _ = whisper.transcribe(ses_oku(video_yolu), language=dil, vad_filter=True)
     satirlar = []
     for i, parca in enumerate(parcalar, 1):
         satirlar.append(f"{i}\n{srt_zamani(parca.start)} --> {srt_zamani(parca.end)}\n{parca.text.strip()}\n")
