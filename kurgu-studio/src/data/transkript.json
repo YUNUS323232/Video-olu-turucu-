@@ -1,0 +1,2338 @@
+[
+ {
+  "bas": 0.3,
+  "son": 2.64,
+  "metin": "İyi günler, birkaç sorunuz olacaktı, cevaplayabilir misiniz?",
+  "kelimeler": [
+   {
+    "bas": 0.3,
+    "son": 0.7,
+    "k": " İyi"
+   },
+   {
+    "bas": 0.7,
+    "son": 0.98,
+    "k": " günler,"
+   },
+   {
+    "bas": 1.02,
+    "son": 1.3,
+    "k": " birkaç"
+   },
+   {
+    "bas": 1.3,
+    "son": 1.58,
+    "k": " sorunuz"
+   },
+   {
+    "bas": 1.58,
+    "son": 2.04,
+    "k": " olacaktı,"
+   },
+   {
+    "bas": 2.06,
+    "son": 2.42,
+    "k": " cevaplayabilir"
+   },
+   {
+    "bas": 2.42,
+    "son": 2.64,
+    "k": " misiniz?"
+   }
+  ]
+ },
+ {
+  "bas": 2.7,
+  "son": 3.1,
+  "metin": "Tabii ki.",
+  "kelimeler": [
+   {
+    "bas": 2.7,
+    "son": 2.92,
+    "k": " Tabii"
+   },
+   {
+    "bas": 2.92,
+    "son": 3.1,
+    "k": " ki."
+   }
+  ]
+ },
+ {
+  "bas": 3.66,
+  "son": 6.42,
+  "metin": "Miraç Kandili hakkında bildiklerinizi bizimle paylaşır mısınız?",
+  "kelimeler": [
+   {
+    "bas": 3.66,
+    "son": 4.22,
+    "k": " Miraç"
+   },
+   {
+    "bas": 4.22,
+    "son": 4.52,
+    "k": " Kandili"
+   },
+   {
+    "bas": 4.52,
+    "son": 5.0,
+    "k": " hakkında"
+   },
+   {
+    "bas": 5.0,
+    "son": 5.5,
+    "k": " bildiklerinizi"
+   },
+   {
+    "bas": 5.5,
+    "son": 5.84,
+    "k": " bizimle"
+   },
+   {
+    "bas": 5.84,
+    "son": 6.2,
+    "k": " paylaşır"
+   },
+   {
+    "bas": 6.2,
+    "son": 6.42,
+    "k": " mısınız?"
+   }
+  ]
+ },
+ {
+  "bas": 8.39,
+  "son": 9.33,
+  "metin": "Miraç Kandili.",
+  "kelimeler": [
+   {
+    "bas": 8.39,
+    "son": 8.95,
+    "k": " Miraç"
+   },
+   {
+    "bas": 8.95,
+    "son": 9.33,
+    "k": " Kandili."
+   }
+  ]
+ },
+ {
+  "bas": 11.03,
+  "son": 12.17,
+  "metin": "Allah'a emanet olun.",
+  "kelimeler": [
+   {
+    "bas": 11.03,
+    "son": 11.59,
+    "k": " Allah"
+   },
+   {
+    "bas": 11.59,
+    "son": 11.75,
+    "k": "'a"
+   },
+   {
+    "bas": 11.75,
+    "son": 11.95,
+    "k": " emanet"
+   },
+   {
+    "bas": 11.95,
+    "son": 12.17,
+    "k": " olun."
+   }
+  ]
+ },
+ {
+  "bas": 13.49,
+  "son": 15.29,
+  "metin": "Peki, teşekkür ederiz, iyi günler.",
+  "kelimeler": [
+   {
+    "bas": 13.49,
+    "son": 14.05,
+    "k": " Peki,"
+   },
+   {
+    "bas": 14.17,
+    "son": 14.45,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 14.45,
+    "son": 14.85,
+    "k": " ederiz,"
+   },
+   {
+    "bas": 14.87,
+    "son": 14.99,
+    "k": " iyi"
+   },
+   {
+    "bas": 14.99,
+    "son": 15.29,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 15.55,
+  "son": 18.01,
+  "metin": "İyi günler, birkaç sorunuz olacaktı, cevaplayabilir misiniz?",
+  "kelimeler": [
+   {
+    "bas": 15.55,
+    "son": 16.11,
+    "k": " İyi"
+   },
+   {
+    "bas": 16.11,
+    "son": 16.23,
+    "k": " günler,"
+   },
+   {
+    "bas": 16.25,
+    "son": 16.53,
+    "k": " birkaç"
+   },
+   {
+    "bas": 16.53,
+    "son": 16.81,
+    "k": " sorunuz"
+   },
+   {
+    "bas": 16.81,
+    "son": 17.29,
+    "k": " olacaktı,"
+   },
+   {
+    "bas": 17.29,
+    "son": 17.73,
+    "k": " cevaplayabilir"
+   },
+   {
+    "bas": 17.73,
+    "son": 18.01,
+    "k": " misiniz?"
+   }
+  ]
+ },
+ {
+  "bas": 18.35,
+  "son": 19.25,
+  "metin": "Evet, cevaplayabilirim.",
+  "kelimeler": [
+   {
+    "bas": 18.35,
+    "son": 18.59,
+    "k": " Evet,"
+   },
+   {
+    "bas": 18.63,
+    "son": 19.25,
+    "k": " cevaplayabilirim."
+   }
+  ]
+ },
+ {
+  "bas": 19.41,
+  "son": 22.91,
+  "metin": "Miraç Kandili hakkında neler biliyorsunuz, bizimle paylaşabilir misiniz?",
+  "kelimeler": [
+   {
+    "bas": 19.41,
+    "son": 19.97,
+    "k": " Miraç"
+   },
+   {
+    "bas": 19.97,
+    "son": 20.31,
+    "k": " Kandili"
+   },
+   {
+    "bas": 20.31,
+    "son": 20.65,
+    "k": " hakkında"
+   },
+   {
+    "bas": 20.65,
+    "son": 20.89,
+    "k": " neler"
+   },
+   {
+    "bas": 20.89,
+    "son": 21.41,
+    "k": " biliyorsunuz,"
+   },
+   {
+    "bas": 21.41,
+    "son": 22.17,
+    "k": " bizimle"
+   },
+   {
+    "bas": 22.17,
+    "son": 22.63,
+    "k": " paylaşabilir"
+   },
+   {
+    "bas": 22.63,
+    "son": 22.91,
+    "k": " misiniz?"
+   }
+  ]
+ },
+ {
+  "bas": 23.17,
+  "son": 24.07,
+  "metin": "Evet, paylaşabiliriz.",
+  "kelimeler": [
+   {
+    "bas": 23.17,
+    "son": 23.37,
+    "k": " Evet,"
+   },
+   {
+    "bas": 23.41,
+    "son": 24.07,
+    "k": " paylaşabiliriz."
+   }
+  ]
+ },
+ {
+  "bas": 24.59,
+  "son": 26.89,
+  "metin": "Peygamber Efendimiz'in gökyüzüne yükselmesi.",
+  "kelimeler": [
+   {
+    "bas": 24.59,
+    "son": 25.15,
+    "k": " Peygamber"
+   },
+   {
+    "bas": 25.15,
+    "son": 25.45,
+    "k": " Efendimiz"
+   },
+   {
+    "bas": 25.45,
+    "son": 25.83,
+    "k": "'in"
+   },
+   {
+    "bas": 25.83,
+    "son": 26.41,
+    "k": " gökyüzüne"
+   },
+   {
+    "bas": 26.41,
+    "son": 26.89,
+    "k": " yükselmesi."
+   }
+  ]
+ },
+ {
+  "bas": 27.37,
+  "son": 29.01,
+  "metin": "Peki, başka bir bilginiz var mı?",
+  "kelimeler": [
+   {
+    "bas": 27.37,
+    "son": 27.93,
+    "k": " Peki,"
+   },
+   {
+    "bas": 27.95,
+    "son": 28.23,
+    "k": " başka"
+   },
+   {
+    "bas": 28.23,
+    "son": 28.41,
+    "k": " bir"
+   },
+   {
+    "bas": 28.41,
+    "son": 28.77,
+    "k": " bilginiz"
+   },
+   {
+    "bas": 28.77,
+    "son": 28.91,
+    "k": " var"
+   },
+   {
+    "bas": 28.91,
+    "son": 29.01,
+    "k": " mı?"
+   }
+  ]
+ },
+ {
+  "bas": 29.43,
+  "son": 30.39,
+  "metin": "Başka bir bilgim yok.",
+  "kelimeler": [
+   {
+    "bas": 29.43,
+    "son": 29.99,
+    "k": " Başka"
+   },
+   {
+    "bas": 29.99,
+    "son": 30.09,
+    "k": " bir"
+   },
+   {
+    "bas": 30.09,
+    "son": 30.23,
+    "k": " bilgim"
+   },
+   {
+    "bas": 30.23,
+    "son": 30.39,
+    "k": " yok."
+   }
+  ]
+ },
+ {
+  "bas": 30.39,
+  "son": 31.79,
+  "metin": "Tamam, teşekkür ederiz, iyi günler.",
+  "kelimeler": [
+   {
+    "bas": 30.39,
+    "son": 30.71,
+    "k": " Tamam,"
+   },
+   {
+    "bas": 30.83,
+    "son": 31.07,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 31.07,
+    "son": 31.49,
+    "k": " ederiz,"
+   },
+   {
+    "bas": 31.49,
+    "son": 31.59,
+    "k": " iyi"
+   },
+   {
+    "bas": 31.59,
+    "son": 31.79,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 31.85,
+  "son": 32.91,
+  "metin": "Bir soru mu olacaktı?",
+  "kelimeler": [
+   {
+    "bas": 31.85,
+    "son": 31.93,
+    "k": " Bir"
+   },
+   {
+    "bas": 31.93,
+    "son": 32.41,
+    "k": " soru"
+   },
+   {
+    "bas": 32.41,
+    "son": 32.43,
+    "k": " mu"
+   },
+   {
+    "bas": 32.43,
+    "son": 32.91,
+    "k": " olacaktı?"
+   }
+  ]
+ },
+ {
+  "bas": 33.29,
+  "son": 34.15,
+  "metin": "Buyurun, sorunuz.",
+  "kelimeler": [
+   {
+    "bas": 33.29,
+    "son": 33.85,
+    "k": " Buyurun,"
+   },
+   {
+    "bas": 33.85,
+    "son": 34.15,
+    "k": " sorunuz."
+   }
+  ]
+ },
+ {
+  "bas": 34.31,
+  "son": 36.85,
+  "metin": "Miraç Kandili ile alakalı bize bilgi verir misiniz?",
+  "kelimeler": [
+   {
+    "bas": 34.31,
+    "son": 34.89,
+    "k": " Miraç"
+   },
+   {
+    "bas": 34.89,
+    "son": 35.25,
+    "k": " Kandili"
+   },
+   {
+    "bas": 35.25,
+    "son": 35.45,
+    "k": " ile"
+   },
+   {
+    "bas": 35.45,
+    "son": 35.97,
+    "k": " alakalı"
+   },
+   {
+    "bas": 35.97,
+    "son": 36.17,
+    "k": " bize"
+   },
+   {
+    "bas": 36.17,
+    "son": 36.47,
+    "k": " bilgi"
+   },
+   {
+    "bas": 36.47,
+    "son": 36.63,
+    "k": " verir"
+   },
+   {
+    "bas": 36.63,
+    "son": 36.85,
+    "k": " misiniz?"
+   }
+  ]
+ },
+ {
+  "bas": 37.27,
+  "son": 38.49,
+  "metin": "Herhangi bir bilgim yok.",
+  "kelimeler": [
+   {
+    "bas": 37.27,
+    "son": 37.87,
+    "k": " Herhangi"
+   },
+   {
+    "bas": 37.87,
+    "son": 38.03,
+    "k": " bir"
+   },
+   {
+    "bas": 38.03,
+    "son": 38.31,
+    "k": " bilgim"
+   },
+   {
+    "bas": 38.31,
+    "son": 38.49,
+    "k": " yok."
+   }
+  ]
+ },
+ {
+  "bas": 38.97,
+  "son": 40.37,
+  "metin": "Tamam, teşekkür ederiz.",
+  "kelimeler": [
+   {
+    "bas": 38.97,
+    "son": 39.61,
+    "k": " Tamam,"
+   },
+   {
+    "bas": 39.73,
+    "son": 39.99,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 39.99,
+    "son": 40.37,
+    "k": " ederiz."
+   }
+  ]
+ },
+ {
+  "bas": 40.53,
+  "son": 41.51,
+  "metin": "İyi günler, iyi günler.",
+  "kelimeler": [
+   {
+    "bas": 40.53,
+    "son": 40.91,
+    "k": " İyi"
+   },
+   {
+    "bas": 40.91,
+    "son": 41.23,
+    "k": " günler,"
+   },
+   {
+    "bas": 41.33,
+    "son": 41.45,
+    "k": " iyi"
+   },
+   {
+    "bas": 41.45,
+    "son": 41.51,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 42.75,
+  "son": 45.77,
+  "metin": "Miraç Kandili ile ilgili bir sorunuz olacaktı, cevaplayabilir misiniz?",
+  "kelimeler": [
+   {
+    "bas": 42.75,
+    "son": 43.39,
+    "k": " Miraç"
+   },
+   {
+    "bas": 43.39,
+    "son": 43.71,
+    "k": " Kandili"
+   },
+   {
+    "bas": 43.71,
+    "son": 43.83,
+    "k": " ile"
+   },
+   {
+    "bas": 43.83,
+    "son": 44.01,
+    "k": " ilgili"
+   },
+   {
+    "bas": 44.01,
+    "son": 44.19,
+    "k": " bir"
+   },
+   {
+    "bas": 44.19,
+    "son": 44.49,
+    "k": " sorunuz"
+   },
+   {
+    "bas": 44.49,
+    "son": 44.97,
+    "k": " olacaktı,"
+   },
+   {
+    "bas": 45.03,
+    "son": 45.59,
+    "k": " cevaplayabilir"
+   },
+   {
+    "bas": 45.59,
+    "son": 45.77,
+    "k": " misiniz?"
+   }
+  ]
+ },
+ {
+  "bas": 46.11,
+  "son": 48.23,
+  "metin": "Miraç Kandili hakkında neler biliyorsunuz?",
+  "kelimeler": [
+   {
+    "bas": 46.11,
+    "son": 46.75,
+    "k": " Miraç"
+   },
+   {
+    "bas": 46.75,
+    "son": 47.09,
+    "k": " Kandili"
+   },
+   {
+    "bas": 47.09,
+    "son": 47.39,
+    "k": " hakkında"
+   },
+   {
+    "bas": 47.39,
+    "son": 47.63,
+    "k": " neler"
+   },
+   {
+    "bas": 47.63,
+    "son": 48.23,
+    "k": " biliyorsunuz?"
+   }
+  ]
+ },
+ {
+  "bas": 48.31,
+  "son": 53.01,
+  "metin": "Miraç Kandili hakkında Peygamber Efendimiz'in karşına çıktığı zaman.",
+  "kelimeler": [
+   {
+    "bas": 48.31,
+    "son": 48.87,
+    "k": " Miraç"
+   },
+   {
+    "bas": 48.87,
+    "son": 49.23,
+    "k": " Kandili"
+   },
+   {
+    "bas": 49.23,
+    "son": 49.71,
+    "k": " hakkında"
+   },
+   {
+    "bas": 49.71,
+    "son": 50.37,
+    "k": " Peygamber"
+   },
+   {
+    "bas": 50.37,
+    "son": 50.75,
+    "k": " Efendimiz"
+   },
+   {
+    "bas": 50.75,
+    "son": 51.01,
+    "k": "'in"
+   },
+   {
+    "bas": 51.01,
+    "son": 51.55,
+    "k": " karşına"
+   },
+   {
+    "bas": 51.55,
+    "son": 51.83,
+    "k": " çıktığı"
+   },
+   {
+    "bas": 51.83,
+    "son": 53.01,
+    "k": " zaman."
+   }
+  ]
+ },
+ {
+  "bas": 54.15,
+  "son": 57.55,
+  "metin": "Peki, Miraç Kandili günü hangi ibadetleri yapıyorsunuz?",
+  "kelimeler": [
+   {
+    "bas": 54.15,
+    "son": 54.79,
+    "k": " Peki,"
+   },
+   {
+    "bas": 54.95,
+    "son": 55.35,
+    "k": " Miraç"
+   },
+   {
+    "bas": 55.35,
+    "son": 55.71,
+    "k": " Kandili"
+   },
+   {
+    "bas": 55.71,
+    "son": 56.07,
+    "k": " günü"
+   },
+   {
+    "bas": 56.07,
+    "son": 56.53,
+    "k": " hangi"
+   },
+   {
+    "bas": 56.53,
+    "son": 56.97,
+    "k": " ibadetleri"
+   },
+   {
+    "bas": 56.97,
+    "son": 57.55,
+    "k": " yapıyorsunuz?"
+   }
+  ]
+ },
+ {
+  "bas": 57.97,
+  "son": 59.41,
+  "metin": "Miraç Kandili günü...",
+  "kelimeler": [
+   {
+    "bas": 57.97,
+    "son": 58.61,
+    "k": " Miraç"
+   },
+   {
+    "bas": 58.61,
+    "son": 58.99,
+    "k": " Kandili"
+   },
+   {
+    "bas": 58.99,
+    "son": 59.41,
+    "k": " günü..."
+   }
+  ]
+ },
+ {
+  "bas": 60.39,
+  "son": 64.01,
+  "metin": "Biliyorsak camiye gidiyoruz, kılabilirsek ters bir namazı kılıyoruz.",
+  "kelimeler": [
+   {
+    "bas": 60.39,
+    "son": 60.81,
+    "k": " Biliyorsak"
+   },
+   {
+    "bas": 60.81,
+    "son": 61.19,
+    "k": " camiye"
+   },
+   {
+    "bas": 61.19,
+    "son": 61.49,
+    "k": " gidiyoruz,"
+   },
+   {
+    "bas": 61.61,
+    "son": 62.57,
+    "k": " kılabilirsek"
+   },
+   {
+    "bas": 62.57,
+    "son": 63.29,
+    "k": " ters"
+   },
+   {
+    "bas": 63.29,
+    "son": 63.35,
+    "k": " bir"
+   },
+   {
+    "bas": 63.35,
+    "son": 63.71,
+    "k": " namazı"
+   },
+   {
+    "bas": 63.71,
+    "son": 64.01,
+    "k": " kılıyoruz."
+   }
+  ]
+ },
+ {
+  "bas": 65.17,
+  "son": 69.85,
+  "metin": "Kur'an bilenler Kur'an okusun, bilmeyenler kendine göre dua etsin.",
+  "kelimeler": [
+   {
+    "bas": 65.17,
+    "son": 65.61,
+    "k": " Kur"
+   },
+   {
+    "bas": 65.61,
+    "son": 65.73,
+    "k": "'an"
+   },
+   {
+    "bas": 65.73,
+    "son": 66.11,
+    "k": " bilenler"
+   },
+   {
+    "bas": 66.11,
+    "son": 66.27,
+    "k": " Kur"
+   },
+   {
+    "bas": 66.27,
+    "son": 66.43,
+    "k": "'an"
+   },
+   {
+    "bas": 66.43,
+    "son": 66.81,
+    "k": " okusun,"
+   },
+   {
+    "bas": 66.81,
+    "son": 67.99,
+    "k": " bilmeyenler"
+   },
+   {
+    "bas": 67.99,
+    "son": 69.17,
+    "k": " kendine"
+   },
+   {
+    "bas": 69.17,
+    "son": 69.31,
+    "k": " göre"
+   },
+   {
+    "bas": 69.31,
+    "son": 69.51,
+    "k": " dua"
+   },
+   {
+    "bas": 69.51,
+    "son": 69.85,
+    "k": " etsin."
+   }
+  ]
+ },
+ {
+  "bas": 70.43,
+  "son": 71.81,
+  "metin": "Peki abi, teşekkür ederiz.",
+  "kelimeler": [
+   {
+    "bas": 70.43,
+    "son": 70.87,
+    "k": " Peki"
+   },
+   {
+    "bas": 70.87,
+    "son": 71.03,
+    "k": " abi,"
+   },
+   {
+    "bas": 71.09,
+    "son": 71.37,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 71.37,
+    "son": 71.81,
+    "k": " ederiz."
+   }
+  ]
+ },
+ {
+  "bas": 71.99,
+  "son": 73.29,
+  "metin": "Biz de teşekkür ederiz, iyi günler.",
+  "kelimeler": [
+   {
+    "bas": 71.99,
+    "son": 72.21,
+    "k": " Biz"
+   },
+   {
+    "bas": 72.21,
+    "son": 72.33,
+    "k": " de"
+   },
+   {
+    "bas": 72.33,
+    "son": 72.57,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 72.57,
+    "son": 72.91,
+    "k": " ederiz,"
+   },
+   {
+    "bas": 72.91,
+    "son": 73.03,
+    "k": " iyi"
+   },
+   {
+    "bas": 73.03,
+    "son": 73.29,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 75.05,
+  "son": 76.93,
+  "metin": "Miraç Kandili hakkında bilginiz var mı?",
+  "kelimeler": [
+   {
+    "bas": 75.05,
+    "son": 75.49,
+    "k": " Miraç"
+   },
+   {
+    "bas": 75.49,
+    "son": 75.83,
+    "k": " Kandili"
+   },
+   {
+    "bas": 75.83,
+    "son": 76.19,
+    "k": " hakkında"
+   },
+   {
+    "bas": 76.19,
+    "son": 76.61,
+    "k": " bilginiz"
+   },
+   {
+    "bas": 76.61,
+    "son": 76.83,
+    "k": " var"
+   },
+   {
+    "bas": 76.83,
+    "son": 76.93,
+    "k": " mı?"
+   }
+  ]
+ },
+ {
+  "bas": 77.07,
+  "son": 77.67,
+  "metin": "Hiçbiri mi bilmiyorum.",
+  "kelimeler": [
+   {
+    "bas": 77.07,
+    "son": 77.43,
+    "k": " Hiçbiri"
+   },
+   {
+    "bas": 77.43,
+    "son": 77.45,
+    "k": " mi"
+   },
+   {
+    "bas": 77.45,
+    "son": 77.67,
+    "k": " bilmiyorum."
+   }
+  ]
+ },
+ {
+  "bas": 77.99,
+  "son": 79.29,
+  "metin": "Tamam, teşekkür ederim, iyi günler.",
+  "kelimeler": [
+   {
+    "bas": 77.99,
+    "son": 78.35,
+    "k": " Tamam,"
+   },
+   {
+    "bas": 78.41,
+    "son": 78.65,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 78.65,
+    "son": 78.99,
+    "k": " ederim,"
+   },
+   {
+    "bas": 79.03,
+    "son": 79.11,
+    "k": " iyi"
+   },
+   {
+    "bas": 79.11,
+    "son": 79.29,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 79.39,
+  "son": 79.69,
+  "metin": "İyi günler.",
+  "kelimeler": [
+   {
+    "bas": 79.39,
+    "son": 79.51,
+    "k": " İyi"
+   },
+   {
+    "bas": 79.51,
+    "son": 79.69,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 80.03,
+  "son": 82.07,
+  "metin": "İyi günler abi, başka sorun mu olacaktı?",
+  "kelimeler": [
+   {
+    "bas": 80.03,
+    "son": 80.47,
+    "k": " İyi"
+   },
+   {
+    "bas": 80.47,
+    "son": 80.71,
+    "k": " günler"
+   },
+   {
+    "bas": 80.71,
+    "son": 80.89,
+    "k": " abi,"
+   },
+   {
+    "bas": 81.01,
+    "son": 81.25,
+    "k": " başka"
+   },
+   {
+    "bas": 81.25,
+    "son": 81.63,
+    "k": " sorun"
+   },
+   {
+    "bas": 81.63,
+    "son": 81.75,
+    "k": " mu"
+   },
+   {
+    "bas": 81.75,
+    "son": 82.07,
+    "k": " olacaktı?"
+   }
+  ]
+ },
+ {
+  "bas": 82.23,
+  "son": 82.43,
+  "metin": "Evet.",
+  "kelimeler": [
+   {
+    "bas": 82.23,
+    "son": 82.43,
+    "k": " Evet."
+   }
+  ]
+ },
+ {
+  "bas": 82.99,
+  "son": 85.41,
+  "metin": "Miraç Kandili hakkında size ne söylüyormuşsun abi?",
+  "kelimeler": [
+   {
+    "bas": 82.99,
+    "son": 83.43,
+    "k": " Miraç"
+   },
+   {
+    "bas": 83.43,
+    "son": 83.77,
+    "k": " Kandili"
+   },
+   {
+    "bas": 83.77,
+    "son": 84.05,
+    "k": " hakkında"
+   },
+   {
+    "bas": 84.05,
+    "son": 84.29,
+    "k": " size"
+   },
+   {
+    "bas": 84.29,
+    "son": 84.49,
+    "k": " ne"
+   },
+   {
+    "bas": 84.49,
+    "son": 85.23,
+    "k": " söylüyormuşsun"
+   },
+   {
+    "bas": 85.23,
+    "son": 85.41,
+    "k": " abi?"
+   }
+  ]
+ },
+ {
+  "bas": 85.83,
+  "son": 87.69,
+  "metin": "Yağmur'un göğüsü çıktığı gün, değil mi?",
+  "kelimeler": [
+   {
+    "bas": 85.83,
+    "son": 86.27,
+    "k": " Yağmur"
+   },
+   {
+    "bas": 86.27,
+    "son": 86.51,
+    "k": "'un"
+   },
+   {
+    "bas": 86.51,
+    "son": 87.01,
+    "k": " göğüsü"
+   },
+   {
+    "bas": 87.01,
+    "son": 87.21,
+    "k": " çıktığı"
+   },
+   {
+    "bas": 87.21,
+    "son": 87.41,
+    "k": " gün,"
+   },
+   {
+    "bas": 87.51,
+    "son": 87.61,
+    "k": " değil"
+   },
+   {
+    "bas": 87.61,
+    "son": 87.69,
+    "k": " mi?"
+   }
+  ]
+ },
+ {
+  "bas": 87.83,
+  "son": 88.13,
+  "metin": "Evet.",
+  "kelimeler": [
+   {
+    "bas": 87.83,
+    "son": 88.13,
+    "k": " Evet."
+   }
+  ]
+ },
+ {
+  "bas": 88.23,
+  "son": 88.83,
+  "metin": "Öyle bir gün.",
+  "kelimeler": [
+   {
+    "bas": 88.23,
+    "son": 88.55,
+    "k": " Öyle"
+   },
+   {
+    "bas": 88.55,
+    "son": 88.69,
+    "k": " bir"
+   },
+   {
+    "bas": 88.69,
+    "son": 88.83,
+    "k": " gün."
+   }
+  ]
+ },
+ {
+  "bas": 89.25,
+  "son": 89.59,
+  "metin": "İyi günler.",
+  "kelimeler": [
+   {
+    "bas": 89.25,
+    "son": 89.31,
+    "k": " İyi"
+   },
+   {
+    "bas": 89.31,
+    "son": 89.59,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 89.59,
+  "son": 89.99,
+  "metin": "Sağ ol abi.",
+  "kelimeler": [
+   {
+    "bas": 89.59,
+    "son": 89.73,
+    "k": " Sağ"
+   },
+   {
+    "bas": 89.73,
+    "son": 89.85,
+    "k": " ol"
+   },
+   {
+    "bas": 89.85,
+    "son": 89.99,
+    "k": " abi."
+   }
+  ]
+ },
+ {
+  "bas": 90.39,
+  "son": 93.45,
+  "metin": "Peki, peygamberimizin Miraç'tan getirdiği hediyeler bilmiyor musunuz abi?",
+  "kelimeler": [
+   {
+    "bas": 90.39,
+    "son": 90.55,
+    "k": " Peki,"
+   },
+   {
+    "bas": 90.59,
+    "son": 91.35,
+    "k": " peygamberimizin"
+   },
+   {
+    "bas": 91.35,
+    "son": 91.97,
+    "k": " Miraç'tan"
+   },
+   {
+    "bas": 91.97,
+    "son": 92.33,
+    "k": " getirdiği"
+   },
+   {
+    "bas": 92.33,
+    "son": 92.73,
+    "k": " hediyeler"
+   },
+   {
+    "bas": 92.73,
+    "son": 92.97,
+    "k": " bilmiyor"
+   },
+   {
+    "bas": 92.97,
+    "son": 93.25,
+    "k": " musunuz"
+   },
+   {
+    "bas": 93.25,
+    "son": 93.45,
+    "k": " abi?"
+   }
+  ]
+ },
+ {
+  "bas": 94.11,
+  "son": 96.21,
+  "metin": "Bir de aşkı yadır aldık göğsümüzden de.",
+  "kelimeler": [
+   {
+    "bas": 94.11,
+    "son": 94.55,
+    "k": " Bir"
+   },
+   {
+    "bas": 94.55,
+    "son": 94.69,
+    "k": " de"
+   },
+   {
+    "bas": 94.69,
+    "son": 94.97,
+    "k": " aşkı"
+   },
+   {
+    "bas": 94.97,
+    "son": 95.13,
+    "k": " yadır"
+   },
+   {
+    "bas": 95.13,
+    "son": 95.41,
+    "k": " aldık"
+   },
+   {
+    "bas": 95.41,
+    "son": 96.01,
+    "k": " göğsümüzden"
+   },
+   {
+    "bas": 96.01,
+    "son": 96.21,
+    "k": " de."
+   }
+  ]
+ },
+ {
+  "bas": 96.71,
+  "son": 98.71,
+  "metin": "Nasip'te Kur'an'da bir ayetle ayetler aldık, değil mi?",
+  "kelimeler": [
+   {
+    "bas": 96.71,
+    "son": 97.15,
+    "k": " Nasip'te"
+   },
+   {
+    "bas": 97.15,
+    "son": 97.31,
+    "k": " Kur"
+   },
+   {
+    "bas": 97.31,
+    "son": 97.55,
+    "k": "'an'da"
+   },
+   {
+    "bas": 97.55,
+    "son": 97.65,
+    "k": " bir"
+   },
+   {
+    "bas": 97.65,
+    "son": 98.05,
+    "k": " ayetle"
+   },
+   {
+    "bas": 98.05,
+    "son": 98.33,
+    "k": " ayetler"
+   },
+   {
+    "bas": 98.33,
+    "son": 98.49,
+    "k": " aldık,"
+   },
+   {
+    "bas": 98.63,
+    "son": 98.71,
+    "k": " değil"
+   },
+   {
+    "bas": 98.71,
+    "son": 98.71,
+    "k": " mi?"
+   }
+  ]
+ },
+ {
+  "bas": 98.71,
+  "son": 99.71,
+  "metin": "Amr'ın Resulü.",
+  "kelimeler": [
+   {
+    "bas": 98.71,
+    "son": 99.09,
+    "k": " Amr"
+   },
+   {
+    "bas": 99.09,
+    "son": 99.17,
+    "k": "'ın"
+   },
+   {
+    "bas": 99.17,
+    "son": 99.71,
+    "k": " Resulü."
+   }
+  ]
+ },
+ {
+  "bas": 100.09,
+  "son": 103.21,
+  "metin": "Tamam, onları bilmiyorum ben de bildiğim adı ayetler, değil mi öyle?",
+  "kelimeler": [
+   {
+    "bas": 100.09,
+    "son": 100.53,
+    "k": " Tamam,"
+   },
+   {
+    "bas": 100.63,
+    "son": 100.77,
+    "k": " onları"
+   },
+   {
+    "bas": 100.77,
+    "son": 100.99,
+    "k": " bilmiyorum"
+   },
+   {
+    "bas": 100.99,
+    "son": 101.21,
+    "k": " ben"
+   },
+   {
+    "bas": 101.21,
+    "son": 101.37,
+    "k": " de"
+   },
+   {
+    "bas": 101.37,
+    "son": 102.17,
+    "k": " bildiğim"
+   },
+   {
+    "bas": 102.17,
+    "son": 102.27,
+    "k": " adı"
+   },
+   {
+    "bas": 102.27,
+    "son": 102.83,
+    "k": " ayetler,"
+   },
+   {
+    "bas": 102.87,
+    "son": 102.99,
+    "k": " değil"
+   },
+   {
+    "bas": 102.99,
+    "son": 103.07,
+    "k": " mi"
+   },
+   {
+    "bas": 103.07,
+    "son": 103.21,
+    "k": " öyle?"
+   }
+  ]
+ },
+ {
+  "bas": 103.39,
+  "son": 103.65,
+  "metin": "Evet.",
+  "kelimeler": [
+   {
+    "bas": 103.39,
+    "son": 103.65,
+    "k": " Evet."
+   }
+  ]
+ },
+ {
+  "bas": 103.81,
+  "son": 104.95,
+  "metin": "Sağ olun, teşekkür ederiz.",
+  "kelimeler": [
+   {
+    "bas": 103.81,
+    "son": 104.25,
+    "k": " Sağ"
+   },
+   {
+    "bas": 104.25,
+    "son": 104.31,
+    "k": " olun,"
+   },
+   {
+    "bas": 104.41,
+    "son": 104.57,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 104.57,
+    "son": 104.95,
+    "k": " ederiz."
+   }
+  ]
+ },
+ {
+  "bas": 105.13,
+  "son": 105.33,
+  "metin": "Sağ olun.",
+  "kelimeler": [
+   {
+    "bas": 105.13,
+    "son": 105.29,
+    "k": " Sağ"
+   },
+   {
+    "bas": 105.29,
+    "son": 105.33,
+    "k": " olun."
+   }
+  ]
+ },
+ {
+  "bas": 105.45,
+  "son": 105.79,
+  "metin": "İyi günler.",
+  "kelimeler": [
+   {
+    "bas": 105.45,
+    "son": 105.63,
+    "k": " İyi"
+   },
+   {
+    "bas": 105.63,
+    "son": 105.79,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 106.65,
+  "son": 108.39,
+  "metin": "Miraç Kandili ile ilgili bir sorun mu olacaktı?",
+  "kelimeler": [
+   {
+    "bas": 106.65,
+    "son": 107.09,
+    "k": " Miraç"
+   },
+   {
+    "bas": 107.09,
+    "son": 107.33,
+    "k": " Kandili"
+   },
+   {
+    "bas": 107.33,
+    "son": 107.43,
+    "k": " ile"
+   },
+   {
+    "bas": 107.43,
+    "son": 107.57,
+    "k": " ilgili"
+   },
+   {
+    "bas": 107.57,
+    "son": 107.73,
+    "k": " bir"
+   },
+   {
+    "bas": 107.73,
+    "son": 107.95,
+    "k": " sorun"
+   },
+   {
+    "bas": 107.95,
+    "son": 108.03,
+    "k": " mu"
+   },
+   {
+    "bas": 108.03,
+    "son": 108.39,
+    "k": " olacaktı?"
+   }
+  ]
+ },
+ {
+  "bas": 109.33,
+  "son": 110.05,
+  "metin": "Bilmiyorum ki.",
+  "kelimeler": [
+   {
+    "bas": 109.33,
+    "son": 109.77,
+    "k": " Bilmiyorum"
+   },
+   {
+    "bas": 109.77,
+    "son": 110.05,
+    "k": " ki."
+   }
+  ]
+ },
+ {
+  "bas": 110.73,
+  "son": 111.91,
+  "metin": "Peki, teşekkür ederiz.",
+  "kelimeler": [
+   {
+    "bas": 110.73,
+    "son": 111.17,
+    "k": " Peki,"
+   },
+   {
+    "bas": 111.23,
+    "son": 111.49,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 111.49,
+    "son": 111.91,
+    "k": " ederiz."
+   }
+  ]
+ },
+ {
+  "bas": 112.39,
+  "son": 112.83,
+  "metin": "Teşekkür ederim.",
+  "kelimeler": [
+   {
+    "bas": 112.39,
+    "son": 112.83,
+    "k": " Teşekkür"
+   },
+   {
+    "bas": 112.83,
+    "son": 112.83,
+    "k": " ederim."
+   }
+  ]
+ },
+ {
+  "bas": 113.33,
+  "son": 115.67,
+  "metin": "Bize bir sorun mu olacaktı? Cevap atarsanız sevinirim.",
+  "kelimeler": [
+   {
+    "bas": 113.33,
+    "son": 113.77,
+    "k": " Bize"
+   },
+   {
+    "bas": 113.77,
+    "son": 113.91,
+    "k": " bir"
+   },
+   {
+    "bas": 113.91,
+    "son": 114.19,
+    "k": " sorun"
+   },
+   {
+    "bas": 114.19,
+    "son": 114.25,
+    "k": " mu"
+   },
+   {
+    "bas": 114.25,
+    "son": 114.65,
+    "k": " olacaktı?"
+   },
+   {
+    "bas": 114.65,
+    "son": 114.85,
+    "k": " Cevap"
+   },
+   {
+    "bas": 114.85,
+    "son": 115.25,
+    "k": " atarsanız"
+   },
+   {
+    "bas": 115.25,
+    "son": 115.67,
+    "k": " sevinirim."
+   }
+  ]
+ },
+ {
+  "bas": 115.81,
+  "son": 116.05,
+  "metin": "Tabii.",
+  "kelimeler": [
+   {
+    "bas": 115.81,
+    "son": 116.05,
+    "k": " Tabii."
+   }
+  ]
+ },
+ {
+  "bas": 116.55,
+  "son": 118.79,
+  "metin": "Miraç Kandili ile alakalı bize bilgi veremez misiniz?",
+  "kelimeler": [
+   {
+    "bas": 116.55,
+    "son": 116.99,
+    "k": " Miraç"
+   },
+   {
+    "bas": 116.99,
+    "son": 117.39,
+    "k": " Kandili"
+   },
+   {
+    "bas": 117.39,
+    "son": 117.57,
+    "k": " ile"
+   },
+   {
+    "bas": 117.57,
+    "son": 117.87,
+    "k": " alakalı"
+   },
+   {
+    "bas": 117.87,
+    "son": 118.03,
+    "k": " bize"
+   },
+   {
+    "bas": 118.03,
+    "son": 118.31,
+    "k": " bilgi"
+   },
+   {
+    "bas": 118.31,
+    "son": 118.59,
+    "k": " veremez"
+   },
+   {
+    "bas": 118.59,
+    "son": 118.79,
+    "k": " misiniz?"
+   }
+  ]
+ },
+ {
+  "bas": 119.09,
+  "son": 120.23,
+  "metin": "Vallahi bir bilgim yok ki.",
+  "kelimeler": [
+   {
+    "bas": 119.09,
+    "son": 119.37,
+    "k": " Vallahi"
+   },
+   {
+    "bas": 119.37,
+    "son": 119.55,
+    "k": " bir"
+   },
+   {
+    "bas": 119.55,
+    "son": 119.83,
+    "k": " bilgim"
+   },
+   {
+    "bas": 119.83,
+    "son": 120.01,
+    "k": " yok"
+   },
+   {
+    "bas": 120.01,
+    "son": 120.23,
+    "k": " ki."
+   }
+  ]
+ },
+ {
+  "bas": 120.39,
+  "son": 121.45,
+  "metin": "Tamam, teşekkür ederim.",
+  "kelimeler": [
+   {
+    "bas": 120.39,
+    "son": 120.75,
+    "k": " Tamam,"
+   },
+   {
+    "bas": 120.83,
+    "son": 121.05,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 121.05,
+    "son": 121.45,
+    "k": " ederim."
+   }
+  ]
+ },
+ {
+  "bas": 122.15,
+  "son": 123.53,
+  "metin": "Bir sorun mu olacaktı?",
+  "kelimeler": [
+   {
+    "bas": 122.15,
+    "son": 122.71,
+    "k": " Bir"
+   },
+   {
+    "bas": 122.71,
+    "son": 123.23,
+    "k": " sorun"
+   },
+   {
+    "bas": 123.23,
+    "son": 123.29,
+    "k": " mu"
+   },
+   {
+    "bas": 123.29,
+    "son": 123.53,
+    "k": " olacaktı?"
+   }
+  ]
+ },
+ {
+  "bas": 123.77,
+  "son": 124.29,
+  "metin": "Tabii, buyurun.",
+  "kelimeler": [
+   {
+    "bas": 123.77,
+    "son": 124.11,
+    "k": " Tabii,"
+   },
+   {
+    "bas": 124.13,
+    "son": 124.29,
+    "k": " buyurun."
+   }
+  ]
+ },
+ {
+  "bas": 124.99,
+  "son": 127.79,
+  "metin": "İki hafta sonra idrak edeceğimiz Miraç Kandili var.",
+  "kelimeler": [
+   {
+    "bas": 124.99,
+    "son": 125.55,
+    "k": " İki"
+   },
+   {
+    "bas": 125.55,
+    "son": 125.79,
+    "k": " hafta"
+   },
+   {
+    "bas": 125.79,
+    "son": 125.91,
+    "k": " sonra"
+   },
+   {
+    "bas": 125.91,
+    "son": 126.29,
+    "k": " idrak"
+   },
+   {
+    "bas": 126.29,
+    "son": 126.85,
+    "k": " edeceğimiz"
+   },
+   {
+    "bas": 126.85,
+    "son": 127.29,
+    "k": " Miraç"
+   },
+   {
+    "bas": 127.29,
+    "son": 127.65,
+    "k": " Kandili"
+   },
+   {
+    "bas": 127.65,
+    "son": 127.79,
+    "k": " var."
+   }
+  ]
+ },
+ {
+  "bas": 128.07,
+  "son": 130.45,
+  "metin": "Bu kandili ile alakalı bize bilgi verir misiniz?",
+  "kelimeler": [
+   {
+    "bas": 128.07,
+    "son": 128.27,
+    "k": " Bu"
+   },
+   {
+    "bas": 128.27,
+    "son": 129.27,
+    "k": " kandili"
+   },
+   {
+    "bas": 129.27,
+    "son": 129.35,
+    "k": " ile"
+   },
+   {
+    "bas": 129.35,
+    "son": 129.61,
+    "k": " alakalı"
+   },
+   {
+    "bas": 129.61,
+    "son": 129.79,
+    "k": " bize"
+   },
+   {
+    "bas": 129.79,
+    "son": 130.03,
+    "k": " bilgi"
+   },
+   {
+    "bas": 130.03,
+    "son": 130.19,
+    "k": " verir"
+   },
+   {
+    "bas": 130.19,
+    "son": 130.45,
+    "k": " misiniz?"
+   }
+  ]
+ },
+ {
+  "bas": 132.57,
+  "son": 134.97,
+  "metin": "Şimdi, peygamberimizin göğe yükselmesi diyebilirim ben.",
+  "kelimeler": [
+   {
+    "bas": 132.57,
+    "son": 133.13,
+    "k": " Şimdi,"
+   },
+   {
+    "bas": 133.13,
+    "son": 133.69,
+    "k": " peygamberimizin"
+   },
+   {
+    "bas": 133.69,
+    "son": 133.89,
+    "k": " göğe"
+   },
+   {
+    "bas": 133.89,
+    "son": 134.35,
+    "k": " yükselmesi"
+   },
+   {
+    "bas": 134.35,
+    "son": 134.87,
+    "k": " diyebilirim"
+   },
+   {
+    "bas": 134.87,
+    "son": 134.97,
+    "k": " ben."
+   }
+  ]
+ },
+ {
+  "bas": 135.39,
+  "son": 136.99,
+  "metin": "Tamam, teşekkür ederim. İyi günler.",
+  "kelimeler": [
+   {
+    "bas": 135.39,
+    "son": 135.95,
+    "k": " Tamam,"
+   },
+   {
+    "bas": 136.11,
+    "son": 136.31,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 136.31,
+    "son": 136.67,
+    "k": " ederim."
+   },
+   {
+    "bas": 136.67,
+    "son": 136.79,
+    "k": " İyi"
+   },
+   {
+    "bas": 136.79,
+    "son": 136.99,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 137.19,
+  "son": 138.67,
+  "metin": "Ben teşekkür ederim. İyi günler.",
+  "kelimeler": [
+   {
+    "bas": 137.19,
+    "son": 137.37,
+    "k": " Ben"
+   },
+   {
+    "bas": 137.37,
+    "son": 137.53,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 137.53,
+    "son": 137.81,
+    "k": " ederim."
+   },
+   {
+    "bas": 138.07,
+    "son": 138.47,
+    "k": " İyi"
+   },
+   {
+    "bas": 138.47,
+    "son": 138.67,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 138.81,
+  "son": 140.15,
+  "metin": "Birkaç soru soracaktım.",
+  "kelimeler": [
+   {
+    "bas": 138.81,
+    "son": 139.33,
+    "k": " Birkaç"
+   },
+   {
+    "bas": 139.33,
+    "son": 139.63,
+    "k": " soru"
+   },
+   {
+    "bas": 139.63,
+    "son": 140.15,
+    "k": " soracaktım."
+   }
+  ]
+ },
+ {
+  "bas": 141.75,
+  "son": 144.53,
+  "metin": "Miraç Kandili hakkında neler biliyorsunuz? Güzel anlatır mısınız?",
+  "kelimeler": [
+   {
+    "bas": 141.75,
+    "son": 142.31,
+    "k": " Miraç"
+   },
+   {
+    "bas": 142.31,
+    "son": 142.65,
+    "k": " Kandili"
+   },
+   {
+    "bas": 142.65,
+    "son": 142.97,
+    "k": " hakkında"
+   },
+   {
+    "bas": 142.97,
+    "son": 143.27,
+    "k": " neler"
+   },
+   {
+    "bas": 143.27,
+    "son": 143.81,
+    "k": " biliyorsunuz?"
+   },
+   {
+    "bas": 143.81,
+    "son": 143.99,
+    "k": " Güzel"
+   },
+   {
+    "bas": 143.99,
+    "son": 144.31,
+    "k": " anlatır"
+   },
+   {
+    "bas": 144.31,
+    "son": 144.53,
+    "k": " mısınız?"
+   }
+  ]
+ },
+ {
+  "bas": 145.47,
+  "son": 149.93,
+  "metin": "Peygamber efendimizin o gecede göğe yükselmesi olayını Miraç Kandili ile ilgili.",
+  "kelimeler": [
+   {
+    "bas": 145.47,
+    "son": 146.03,
+    "k": " Peygamber"
+   },
+   {
+    "bas": 146.03,
+    "son": 146.59,
+    "k": " efendimizin"
+   },
+   {
+    "bas": 146.59,
+    "son": 147.17,
+    "k": " o"
+   },
+   {
+    "bas": 147.17,
+    "son": 147.51,
+    "k": " gecede"
+   },
+   {
+    "bas": 147.51,
+    "son": 147.97,
+    "k": " göğe"
+   },
+   {
+    "bas": 147.97,
+    "son": 148.47,
+    "k": " yükselmesi"
+   },
+   {
+    "bas": 148.47,
+    "son": 148.89,
+    "k": " olayını"
+   },
+   {
+    "bas": 148.89,
+    "son": 149.29,
+    "k": " Miraç"
+   },
+   {
+    "bas": 149.29,
+    "son": 149.61,
+    "k": " Kandili"
+   },
+   {
+    "bas": 149.61,
+    "son": 149.77,
+    "k": " ile"
+   },
+   {
+    "bas": 149.77,
+    "son": 149.93,
+    "k": " ilgili."
+   }
+  ]
+ },
+ {
+  "bas": 151.41,
+  "son": 152.49,
+  "metin": "Başka bilginiz var mı peki?",
+  "kelimeler": [
+   {
+    "bas": 151.41,
+    "son": 151.73,
+    "k": " Başka"
+   },
+   {
+    "bas": 151.73,
+    "son": 152.05,
+    "k": " bilginiz"
+   },
+   {
+    "bas": 152.05,
+    "son": 152.19,
+    "k": " var"
+   },
+   {
+    "bas": 152.19,
+    "son": 152.27,
+    "k": " mı"
+   },
+   {
+    "bas": 152.27,
+    "son": 152.49,
+    "k": " peki?"
+   }
+  ]
+ },
+ {
+  "bas": 153.41,
+  "son": 155.11,
+  "metin": "Yani kapsamda yok. Yani bu kadar.",
+  "kelimeler": [
+   {
+    "bas": 153.41,
+    "son": 153.73,
+    "k": " Yani"
+   },
+   {
+    "bas": 153.73,
+    "son": 154.05,
+    "k": " kapsamda"
+   },
+   {
+    "bas": 154.05,
+    "son": 154.21,
+    "k": " yok."
+   },
+   {
+    "bas": 154.25,
+    "son": 154.51,
+    "k": " Yani"
+   },
+   {
+    "bas": 154.51,
+    "son": 154.87,
+    "k": " bu"
+   },
+   {
+    "bas": 154.87,
+    "son": 155.11,
+    "k": " kadar."
+   }
+  ]
+ },
+ {
+  "bas": 155.67,
+  "son": 156.99,
+  "metin": "Tamam, teşekkür ederim. İyi günler.",
+  "kelimeler": [
+   {
+    "bas": 155.67,
+    "son": 155.99,
+    "k": " Tamam,"
+   },
+   {
+    "bas": 156.05,
+    "son": 156.31,
+    "k": " teşekkür"
+   },
+   {
+    "bas": 156.31,
+    "son": 156.63,
+    "k": " ederim."
+   },
+   {
+    "bas": 156.69,
+    "son": 156.77,
+    "k": " İyi"
+   },
+   {
+    "bas": 156.77,
+    "son": 156.99,
+    "k": " günler."
+   }
+  ]
+ },
+ {
+  "bas": 157.03,
+  "son": 157.33,
+  "metin": "Teşekkür ederim.",
+  "kelimeler": [
+   {
+    "bas": 157.03,
+    "son": 157.19,
+    "k": " Teşekkür"
+   },
+   {
+    "bas": 157.19,
+    "son": 157.33,
+    "k": " ederim."
+   }
+  ]
+ }
+]

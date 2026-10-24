@@ -1,15 +1,80 @@
 {
-  "_aciklama": "Zamanlar orijinal videoya göredir (saniye). 'sorular' dizisi röportaj sırasıyla doldurulur; boş bırakılan röportajda soru kartı yerine numara kartı çıkar.",
+  "_aciklama": "Zamanlar: bas/son/kesimler orijinal videoya göre; 'sorular[].zaman' röportaj başına (transkriptteki) göre saniyedir. Soru kartı o anda çıkar, altında altyazı gizlenir.",
   "kaynak": "../ornekler/ham_video/MİRAÇ KANDİLİ.mp4",
   "bas": 15.1,
   "son": 173.9,
-  "kesimler": [31.2, 47.0, 57.1, 89.1, 95.1, 121.8, 128.8, 137.8, 153.9],
+  "kesimler": [
+    31.2,
+    47.0,
+    57.1,
+    89.1,
+    95.1,
+    121.8,
+    128.8,
+    137.8,
+    153.9
+  ],
   "ust_baslik": "Eğirdir'in nabzını yokladık",
-  "baslik": ["MİRAÇ", "KANDİLİ"],
+  "baslik": [
+    "MİRAÇ",
+    "KANDİLİ"
+  ],
   "alt_baslik": "nedir?",
   "konum": "Eğirdir",
   "hazirlayan": "12-A",
-  "sorular": [],
-  "kapanis": ["Miraç Kandiliniz", "mübarek olsun"],
+  "sorular": [
+    {
+      "zaman": 3.7,
+      "metin": "Miraç Kandili hakkında bildiklerinizi bizimle paylaşır mısınız?"
+    },
+    {
+      "zaman": 19.4,
+      "metin": "Miraç Kandili hakkında neler biliyorsunuz?"
+    },
+    {
+      "zaman": 34.3,
+      "metin": "Miraç Kandili ile alakalı bize bilgi verir misiniz?"
+    },
+    {
+      "zaman": 46.1,
+      "metin": "Miraç Kandili hakkında neler biliyorsunuz?"
+    },
+    {
+      "zaman": 54.1,
+      "metin": "Miraç Kandili günü hangi ibadetleri yapıyorsunuz?"
+    },
+    {
+      "zaman": 75.0,
+      "metin": "Miraç Kandili hakkında bilginiz var mı?"
+    },
+    {
+      "zaman": 83.0,
+      "metin": "Miraç Kandili hakkında ne biliyorsunuz?"
+    },
+    {
+      "zaman": 90.4,
+      "metin": "Peygamberimizin Miraç'tan getirdiği hediyeleri biliyor musunuz?"
+    },
+    {
+      "zaman": 106.7,
+      "metin": "Miraç Kandili hakkında bilginiz var mı?"
+    },
+    {
+      "zaman": 116.5,
+      "metin": "Miraç Kandili ile alakalı bize bilgi verebilir misiniz?"
+    },
+    {
+      "zaman": 125.0,
+      "metin": "İki hafta sonra idrak edeceğimiz Miraç Kandili hakkında bilgi verir misiniz?"
+    },
+    {
+      "zaman": 141.8,
+      "metin": "Miraç Kandili hakkında neler biliyorsunuz?"
+    }
+  ],
+  "kapanis": [
+    "Miraç Kandiliniz",
+    "mübarek olsun"
+  ],
   "ek_goruntuler": []
 }

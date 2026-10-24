@@ -18,18 +18,24 @@ export const TOPLAM = KAPANIS_BAS + KAPANIS;
 export const KART_SURE = 105; // 3.5 sn
 export const GECIS_SURE = 14;
 
-export type Bolum = { no: number; bas: number; son: number; soru?: string };
+export type Bolum = { no: number; bas: number; son: number };
+export type Soru = { no: number; bas: number; metin: string; bolum: number };
 
-// Röportaj bölümleri, röportaj Sequence'ının içindeki kare numaralarıyla.
+// Röportaj bölümleri (kişi değişimleri), röportaj Sequence'ının içindeki kare numaralarıyla.
 export const BOLUMLER: Bolum[] = (() => {
   const sinirlar = [veri.bas, ...veri.kesimler, veri.son];
-  const sorular = veri.sorular as string[];
   return sinirlar.slice(0, -1).map((bas, i) => ({
     no: i + 1,
     bas: Math.round((bas - veri.bas) * FPS),
     son: Math.round((sinirlar[i + 1] - veri.bas) * FPS),
-    soru: sorular[i] || undefined,
   }));
 })();
+
+// Soru kartları: soru sorulduğu anda çıkar.
+export const SORULAR: Soru[] = (veri.sorular as { zaman: number; metin: string }[]).map((s, i) => {
+  const bas = Math.round(s.zaman * FPS) - 4;
+  const bolum = BOLUMLER.find((b) => bas >= b.bas && bas < b.son) ?? BOLUMLER[BOLUMLER.length - 1];
+  return { no: i + 1, bas, metin: s.metin, bolum: bolum.no };
+});
 
 export const veriler = veri;

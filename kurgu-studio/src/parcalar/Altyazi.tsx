@@ -48,7 +48,7 @@ export const Altyazi: React.FC<{ ust: number }> = ({ ust }) => {
               fontWeight: 800,
               fontSize: 50,
               lineHeight: 1.25,
-              color: aktif ? ALTIN : soylendi ? "#ffffff" : "rgba(255,255,255,0.55)",
+              color: aktif ? ALTIN : soylendi ? "#ffffff" : "rgba(255,255,255,0.82)",
               transform: aktif ? `scale(${vurgu})` : undefined,
               display: "inline-block",
               textShadow: "0 3px 0 rgba(0,0,0,0.85), 0 0 18px rgba(0,0,0,0.9), 2px 2px 0 #000, -2px -2px 0 #000",

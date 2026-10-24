@@ -14,7 +14,7 @@ import {
 import { ALTIN, ALTIN_PARLAK, AltinTozu, Gren, Hilal, IsikSizmasi, Vinyet } from "./Efektler";
 import { KelimeKelime, SANS } from "./Yazi";
 import { Altyazi } from "./Altyazi";
-import { BOLUMLER, Bolum, GECIS_SURE, KART_SURE, ROPORTAJ } from "../zaman";
+import { BOLUMLER, Bolum, GECIS_SURE, KART_SURE, ROPORTAJ, SORULAR, Soru } from "../zaman";
 
 // Video çerçevesinin konumu (dikey ekranın ortası, 16:9).
 // Instagram'ın alt arayüzüne (yaklaşık son 320 piksel) yazı denk gelmesin diye kutu biraz yukarıda.
@@ -23,7 +23,7 @@ const GECISLER = ["ac", "kay", "zoom"] as const;
 
 const gecisTuru = (b: Bolum) => (b.no === 1 ? null : GECISLER[(b.no - 2) % GECISLER.length]);
 
-const SoruKarti: React.FC<{ bolum: Bolum }> = ({ bolum }) => {
+const SoruKarti: React.FC<{ soru: Soru }> = ({ soru }) => {
   const kare = useCurrentFrame();
   const { fps } = useVideoConfig();
   const giris = spring({ frame: kare, fps, config: { damping: 16, mass: 0.9 } });
@@ -33,8 +33,7 @@ const SoruKarti: React.FC<{ bolum: Bolum }> = ({ bolum }) => {
     easing: Easing.in(Easing.cubic),
   });
   const cubuk = interpolate(kare, [4, 20], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const etiket = bolum.soru ? `SORU ${bolum.no}` : `RÖPORTAJ ${bolum.no} / ${BOLUMLER.length}`;
-  const metin = bolum.soru ?? "Eğirdir halkı cevaplıyor";
+  const etiket = `SORU  ·  RÖPORTAJ ${soru.bolum} / ${BOLUMLER.length}`;
   return (
     <div
       style={{
@@ -81,10 +80,10 @@ const SoruKarti: React.FC<{ bolum: Bolum }> = ({ bolum }) => {
           {etiket}
         </div>
         <KelimeKelime
-          metin={metin}
+          metin={soru.metin}
           bas={10}
-          aralik={3}
-          stil={{ fontFamily: SANS, fontWeight: 800, fontSize: bolum.soru ? 54 : 58, lineHeight: 1.15, color: "#fff" }}
+          aralik={2}
+          stil={{ fontFamily: SANS, fontWeight: 800, fontSize: 50, lineHeight: 1.15, color: "#fff" }}
         />
       </div>
     </div>
@@ -229,11 +228,14 @@ export const Roportaj: React.FC = () => {
       ) : null}
 
       <IlerlemeNoktalari aktif={bolum.no} />
-      <Altyazi ust={KUTU.ust + KUTU.yukseklik + 300} />
+      {/* Soru kartı ekrandayken altyazı gizlenir (aynı cümle iki kez yazılmasın). */}
+      {SORULAR.some((s) => kare >= s.bas && kare < s.bas + KART_SURE) ? null : (
+        <Altyazi ust={KUTU.ust + KUTU.yukseklik + 120} />
+      )}
 
-      {BOLUMLER.map((b) => (
-        <Sequence key={b.no} from={b.bas + (b.no === 1 ? 12 : 8)} durationInFrames={KART_SURE} layout="none">
-          <SoruKarti bolum={b} />
+      {SORULAR.map((s) => (
+        <Sequence key={s.no} from={s.bas} durationInFrames={KART_SURE} layout="none">
+          <SoruKarti soru={s} />
         </Sequence>
       ))}
 

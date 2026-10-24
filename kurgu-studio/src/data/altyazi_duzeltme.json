@@ -1,0 +1,16 @@
+{
+  "_aciklama": "transkript.json üzerindeki elle düzeltmeler. Anahtar: satırın başlangıç saniyesi (transkriptteki 'bas', 1 ondalık). 'duzelt' metni değiştirir, 'sil' satırı altyazıdan çıkarır (anlaşılmayan yerler). Düzenleyince: python3 altyazi_hazirla.py",
+  "duzelt": {
+    "0.3": "İyi günler, birkaç sorumuz olacaktı, cevaplayabilir misiniz?",
+    "15.6": "İyi günler, birkaç sorumuz olacaktı, cevaplayabilir misiniz?",
+    "31.9": "Bir sorumuz olacaktı.",
+    "42.8": "Miraç Kandili ile ilgili bir sorumuz olacaktı, cevaplayabilir misiniz?",
+    "60.4": "Biliyorsak camiye gidiyoruz, kılabilirsek tesbih namazı kılıyoruz.",
+    "80.0": "İyi günler abi, bir sorumuz olacaktı.",
+    "106.7": "Miraç Kandili ile ilgili bir sorumuz olacaktı.",
+    "113.3": "Bir sorumuz olacaktı, cevaplarsanız sevinirim.",
+    "122.2": "Bir sorumuz olacaktı.",
+    "153.4": "Yani bu kadar."
+  },
+  "sil": [48.3, 77.1, 83.0, 85.8, 94.1, 96.7, 98.7, 100.1]
+}
