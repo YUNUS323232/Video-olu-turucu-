@@ -27,16 +27,18 @@ export const Altyazi: React.FC<{ ust: number }> = ({ ust }) => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
-        columnGap: 14,
+        columnGap: 18,
         rowGap: 4,
         transform: `scale(${0.92 + 0.08 * giris})`,
         opacity: giris,
       }}
     >
       {parca.kelimeler.map((k, i) => {
-        const aktif = t >= k.bas && t < k.son + 0.05;
+        // Aynı anda tek kelime vurgulanır: başlamış son kelime, bitişinden sonra kısa süre daha.
+        const sonraki = parca.kelimeler[i + 1];
+        const aktif = t >= k.bas && t < k.son + 0.05 && !(sonraki && t >= sonraki.bas);
         const soylendi = t >= k.bas;
-        const vurgu = interpolate(t, [k.bas, k.bas + 0.12], [1.12, 1], {
+        const vurgu = interpolate(t, [k.bas, k.bas + 0.12], [1.06, 1], {
           extrapolateLeft: "clamp",
           extrapolateRight: "clamp",
         });
