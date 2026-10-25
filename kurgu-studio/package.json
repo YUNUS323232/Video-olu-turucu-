@@ -5,7 +5,8 @@
   "scripts": {
     "hazirla": "python3 hazirla.py",
     "studio": "remotion studio",
-    "render": "remotion render src/index.ts MiracKandili cikti/mirac_kandili_reels.mp4"
+    "render": "remotion render src/index.ts MiracKandili cikti/mirac_kandili_reels.mp4",
+    "render:umre": "python3 umre_muzik.py && remotion render src/index.ts UmreTanitim cikti/hasbihal_umre_reels.mp4 --crf=18"
   },
   "dependencies": {
     "@fontsource/cinzel": "^5.1.0",
