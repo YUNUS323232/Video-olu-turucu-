@@ -1,0 +1,366 @@
+{
+ "toplam": 36.77,
+ "sahneler": {
+  "kanca": 0.0,
+  "hastalik": 4.203,
+  "hedef": 10.307,
+  "ilerleme": 15.455,
+  "kahve": 19.653,
+  "slogan": 23.125,
+  "cta": 26.536
+ },
+ "cumleler": [
+  {
+   "sahne": "kanca",
+   "metin": "Bu gülümsemeye iyi bak.",
+   "bas": 0.35,
+   "son": 1.994,
+   "kelimeler": [
+    {
+     "w": "Bu",
+     "b": 0.35,
+     "s": 0.58
+    },
+    {
+     "w": "gülümsemeye",
+     "b": 0.58,
+     "s": 1.35
+    },
+    {
+     "w": "iyi",
+     "b": 1.35,
+     "s": 1.64
+    },
+    {
+     "w": "bak.",
+     "b": 1.64,
+     "s": 1.99
+    }
+   ]
+  },
+  {
+   "sahne": "kanca",
+   "metin": "Duru'nun zamanı daralıyor.",
+   "bas": 2.244,
+   "son": 3.853,
+   "kelimeler": [
+    {
+     "w": "Duru'nun",
+     "b": 2.24,
+     "s": 2.78
+    },
+    {
+     "w": "zamanı",
+     "b": 2.78,
+     "s": 3.21
+    },
+    {
+     "w": "daralıyor.",
+     "b": 3.21,
+     "s": 3.85
+    }
+   ]
+  },
+  {
+   "sahne": "hastalik",
+   "metin": "Duru, SMA Tip-1 hastası.",
+   "bas": 4.453,
+   "son": 6.68,
+   "kelimeler": [
+    {
+     "w": "Duru,",
+     "b": 4.45,
+     "s": 4.99
+    },
+    {
+     "w": "SMA",
+     "b": 4.99,
+     "s": 5.37
+    },
+    {
+     "w": "Tip-1",
+     "b": 5.37,
+     "s": 5.91
+    },
+    {
+     "w": "hastası.",
+     "b": 5.91,
+     "s": 6.68
+    }
+   ]
+  },
+  {
+   "sahne": "hastalik",
+   "metin": "Kasları her geçen gün biraz daha güçsüzleşiyor.",
+   "bas": 6.98,
+   "son": 9.957,
+   "kelimeler": [
+    {
+     "w": "Kasları",
+     "b": 7.04,
+     "s": 7.54
+    },
+    {
+     "w": "her",
+     "b": 7.54,
+     "s": 7.84
+    },
+    {
+     "w": "geçen",
+     "b": 7.84,
+     "s": 8.26
+    },
+    {
+     "w": "gün",
+     "b": 8.26,
+     "s": 8.4
+    },
+    {
+     "w": "biraz",
+     "b": 8.4,
+     "s": 8.78
+    },
+    {
+     "w": "daha",
+     "b": 8.78,
+     "s": 9.02
+    },
+    {
+     "w": "güçsüzleşiyor.",
+     "b": 9.02,
+     "s": 10.32
+    }
+   ]
+  },
+  {
+   "sahne": "hedef",
+   "metin": "Onu yaşatacak ilaç için 1.815.000 dolar gerekiyor.",
+   "bas": 10.557,
+   "son": 15.105,
+   "kelimeler": [
+    {
+     "w": "Onu",
+     "b": 10.56,
+     "s": 10.95
+    },
+    {
+     "w": "yaşatacak",
+     "b": 10.95,
+     "s": 11.81
+    },
+    {
+     "w": "ilaç",
+     "b": 11.81,
+     "s": 12.28
+    },
+    {
+     "w": "için",
+     "b": 12.28,
+     "s": 12.75
+    },
+    {
+     "w": "1.815.000",
+     "b": 12.75,
+     "s": 13.62
+    },
+    {
+     "w": "dolar",
+     "b": 13.62,
+     "s": 14.16
+    },
+    {
+     "w": "gerekiyor.",
+     "b": 14.16,
+     "s": 15.1
+    }
+   ]
+  },
+  {
+   "sahne": "ilerleme",
+   "metin": "Kampanya %10'a ulaştı. Ama zaman hızla akıyor.",
+   "bas": 15.705,
+   "son": 19.303,
+   "kelimeler": [
+    {
+     "w": "Kampanya",
+     "b": 15.7,
+     "s": 16.37
+    },
+    {
+     "w": "%10'a",
+     "b": 16.37,
+     "s": 16.84
+    },
+    {
+     "w": "ulaştı.",
+     "b": 16.84,
+     "s": 17.44
+    },
+    {
+     "w": "Ama",
+     "b": 17.44,
+     "s": 17.77
+    },
+    {
+     "w": "zaman",
+     "b": 17.77,
+     "s": 18.24
+    },
+    {
+     "w": "hızla",
+     "b": 18.24,
+     "s": 18.7
+    },
+    {
+     "w": "akıyor.",
+     "b": 18.7,
+     "s": 19.3
+    }
+   ]
+  },
+  {
+   "sahne": "kahve",
+   "metin": "Bir kahve parası bile, Duru için bir nefes demek.",
+   "bas": 19.903,
+   "son": 22.775,
+   "kelimeler": [
+    {
+     "w": "Bir",
+     "b": 20.0,
+     "s": 20.2
+    },
+    {
+     "w": "kahve",
+     "b": 20.2,
+     "s": 20.58
+    },
+    {
+     "w": "parası",
+     "b": 20.58,
+     "s": 20.92
+    },
+    {
+     "w": "bile,",
+     "b": 20.92,
+     "s": 21.16
+    },
+    {
+     "w": "Duru",
+     "b": 21.16,
+     "s": 21.4
+    },
+    {
+     "w": "için",
+     "b": 21.4,
+     "s": 21.66
+    },
+    {
+     "w": "bir",
+     "b": 21.66,
+     "s": 21.96
+    },
+    {
+     "w": "nefes",
+     "b": 21.96,
+     "s": 22.34
+    },
+    {
+     "w": "demek.",
+     "b": 22.34,
+     "s": 22.68
+    }
+   ]
+  },
+  {
+   "sahne": "slogan",
+   "metin": "Kayısılar yeşerecek, Duru ilacına yetişecek.",
+   "bas": 23.375,
+   "son": 26.186,
+   "kelimeler": [
+    {
+     "w": "Kayısılar",
+     "b": 23.48,
+     "s": 23.98
+    },
+    {
+     "w": "yeşerecek,",
+     "b": 23.98,
+     "s": 24.68
+    },
+    {
+     "w": "Duru",
+     "b": 24.86,
+     "s": 25.02
+    },
+    {
+     "w": "ilacına",
+     "b": 25.02,
+     "s": 25.5
+    },
+    {
+     "w": "yetişecek.",
+     "b": 25.5,
+     "s": 26.22
+    }
+   ]
+  },
+  {
+   "sahne": "cta",
+   "metin": "Valilik izinli hesaplar ekranda. Bağış yap, paylaş. Duru'nun sesi ol.",
+   "bas": 26.786,
+   "son": 31.775,
+   "kelimeler": [
+    {
+     "w": "Valilik",
+     "b": 26.86,
+     "s": 27.32
+    },
+    {
+     "w": "izinli",
+     "b": 27.32,
+     "s": 27.78
+    },
+    {
+     "w": "hesaplar",
+     "b": 27.78,
+     "s": 28.42
+    },
+    {
+     "w": "ekranda.",
+     "b": 28.42,
+     "s": 28.96
+    },
+    {
+     "w": "Bağış",
+     "b": 28.96,
+     "s": 29.58
+    },
+    {
+     "w": "yap,",
+     "b": 29.58,
+     "s": 29.8
+    },
+    {
+     "w": "paylaş.",
+     "b": 29.8,
+     "s": 30.46
+    },
+    {
+     "w": "Duru'nun",
+     "b": 30.7,
+     "s": 31.04
+    },
+    {
+     "w": "sesi",
+     "b": 31.04,
+     "s": 31.5
+    },
+    {
+     "w": "ol.",
+     "b": 31.5,
+     "s": 31.64
+    }
+   ]
+  }
+ ]
+}
