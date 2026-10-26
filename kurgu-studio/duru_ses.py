@@ -1,6 +1,7 @@
 """Duru kampanya videosu: seslendirme, zaman çizelgesi ve fon müziği.
 
-1. Her cümleyi Piper (tr_TR-dfki-medium) ile seslendirir, aralara kısa sessizlik koyar.
+1. public/duru/seslendirme.mp3 varsa (ör. ElevenLabs kaydı) onu kullanır; cümle başlarını
+   faster-whisper ile bulur. Yoksa her cümleyi Piper (tr_TR-dfki-medium) ile seslendirir.
 2. Kelime zamanlarını faster-whisper ile bulur (altyazı için).
 3. Sahne başlarına oturan duygusal piyano + yaylı pad müziği üretir.
 
@@ -12,6 +13,7 @@ import json
 import subprocess
 import wave
 from pathlib import Path
+from types import SimpleNamespace
 
 import numpy as np
 
@@ -85,13 +87,49 @@ def seslendir() -> tuple[np.ndarray, list[dict]]:
     return np.concatenate(parcalar), cumleler
 
 
-def kelime_zamanlari(ses: np.ndarray, cumleler: list[dict]) -> None:
-    """Her cümleye kelime zamanlarını ekler; kelimeler altyazı metninden alınır."""
+def kelimeleri_bul(ses: np.ndarray) -> list:
     from faster_whisper import WhisperModel
 
     model = WhisperModel("medium", compute_type="int8")
     ses16 = np.interp(np.arange(0, len(ses), SR / 16000), np.arange(len(ses)), ses).astype(np.float32)
-    bulunan = [w for seg in model.transcribe(ses16, language="tr", word_timestamps=True)[0] for w in seg.words]
+    kelimeler: list[SimpleNamespace] = []
+    for seg in model.transcribe(ses16, language="tr", word_timestamps=True)[0]:
+        for w in seg.words:
+            # Whisper eki ayrı verir ("Duru" + "'nun"); önceki kelimeye ekle.
+            if kelimeler and w.word.strip()[:1] in "'’":
+                kelimeler[-1].word += w.word.strip()
+                kelimeler[-1].end = w.end
+            else:
+                kelimeler.append(SimpleNamespace(word=w.word.strip(), start=w.start, end=w.end))
+    return kelimeler
+
+
+def sade(kelime: str) -> str:
+    return "".join(h for h in kelime.lower() if h.isalnum())
+
+
+def hazir_cumleler(bulunan: list) -> list[dict]:
+    """Hazır kayıtta her cümlenin başını ilk kelimesinden bulur (sırayla arar)."""
+    cumleler, imlec = [], 0
+    for sahne, _, altyazi in CUMLELER:
+        ilk = sade(altyazi.split()[0])
+        while imlec < len(bulunan) and sade(bulunan[imlec].word) != ilk:
+            imlec += 1
+        if imlec == len(bulunan):
+            raise SystemExit(f"Kayıtta bu cümle bulunamadı: {altyazi}")
+        cumleler.append({"sahne": sahne, "metin": altyazi, "bas": round(float(bulunan[imlec].start), 3), "_i": imlec})
+        imlec += 1
+    for i, c in enumerate(cumleler):
+        # Cümle sonu: sonraki cümleden önceki son kelime. Sonuncuda kelime sayısı kadar
+        # ilerle (Whisper kaydın sonuna "Altyazı M.K." gibi uydurma kelime ekleyebiliyor).
+        bas_i = c.pop("_i")
+        son_i = cumleler[i + 1]["_i"] - 1 if i + 1 < len(cumleler) else bas_i + len(c["metin"].split()) - 1
+        c["son"] = round(float(bulunan[min(son_i, len(bulunan) - 1)].end), 3)
+    return cumleler
+
+
+def kelime_zamanlari(bulunan: list, cumleler: list[dict]) -> None:
+    """Her cümleye kelime zamanlarını ekler; kelimeler altyazı metninden alınır."""
     for c in cumleler:
         kelimeler = c["metin"].split()
         icinde = [w for w in bulunan if c["bas"] - 0.15 <= w.start < c["son"] + 0.1]
@@ -195,8 +233,17 @@ def muzik(sahneler: dict[str, float], toplam: float) -> np.ndarray:
 
 
 def main() -> None:
-    ses, cumleler = seslendir()
-    kelime_zamanlari(ses, cumleler)
+    hazir = KLASOR / "seslendirme.mp3"
+    if hazir.exists():
+        ses = np.concatenate([np.zeros(int(BASLANGIC * SR)), oku_wav(hazir)])
+        bulunan = kelimeleri_bul(ses)
+        cumleler = hazir_cumleler(bulunan)
+        filtre = "highpass=f=80,acompressor=threshold=-20dB:ratio=2:makeup=2,loudnorm=I=-16:TP=-1.5"
+    else:
+        ses, cumleler = seslendir()
+        bulunan = kelimeleri_bul(ses)
+        filtre = "highpass=f=90,equalizer=f=3000:t=q:w=1:g=3,acompressor=threshold=-18dB:ratio=3:makeup=3,aecho=0.8:0.5:40:0.12,loudnorm=I=-16:TP=-1.5"
+    kelime_zamanlari(bulunan, cumleler)
 
     sahneler: dict[str, float] = {}
     for c in cumleler:
@@ -204,13 +251,13 @@ def main() -> None:
     sahneler["kanca"] = 0.0
     toplam = round(cumleler[-1]["son"] + CTA_UZATMA, 2)
 
-    # Ses: hafif sıkıştırma ve parlaklık, -16 LUFS civarı.
+    # Ses: hafif sıkıştırma, -16 LUFS civarı.
     ses = np.concatenate([ses, np.zeros(int((toplam - len(ses) / SR) * SR) + SR)])
     yaz_wav(KLASOR / "ses_ham.wav", ses * 0.9)
     subprocess.run(
         [
             "ffmpeg", "-v", "error", "-y", "-i", str(KLASOR / "ses_ham.wav"),
-            "-af", "highpass=f=90,equalizer=f=3000:t=q:w=1:g=3,acompressor=threshold=-18dB:ratio=3:makeup=3,aecho=0.8:0.5:40:0.12,loudnorm=I=-16:TP=-1.5",
+            "-af", filtre,
             "-ar", str(SR), str(KLASOR / "ses.wav"),
         ],
         check=True,
