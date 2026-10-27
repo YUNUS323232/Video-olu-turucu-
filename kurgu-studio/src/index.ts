@@ -4,6 +4,7 @@ import { Mirac } from "./Mirac";
 import { Umre, UMRE_TOPLAM } from "./Umre";
 import { Konusma, KONUSMA_TOPLAM } from "./Konusma";
 import { Duru, DURU_TOPLAM } from "./Duru";
+import { Diyet, DIYET_TOPLAM } from "./Diyet";
 import { FPS, GENISLIK, TOPLAM, YUKSEKLIK } from "./zaman";
 
 const Kok: React.FC = () =>
@@ -41,6 +42,15 @@ const Kok: React.FC = () =>
       fps: FPS,
       width: GENISLIK,
       height: YUKSEKLIK,
+    }),
+    React.createElement(Composition, {
+      id: "DiyetKurgu",
+      component: Diyet,
+      durationInFrames: DIYET_TOPLAM,
+      fps: FPS,
+      width: GENISLIK,
+      height: YUKSEKLIK,
+      defaultProps: { kaynak: "diyet/iyi.mp4" },
     }),
   );
 

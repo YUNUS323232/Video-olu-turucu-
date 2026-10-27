@@ -8,7 +8,8 @@
     "render": "remotion render src/index.ts MiracKandili cikti/mirac_kandili_reels.mp4",
     "render:umre": "python3 umre_muzik.py && remotion render src/index.ts UmreTanitim cikti/hasbihal_umre_reels.mp4 --crf=18",
     "render:konusma": "python3 konusma_ses.py && remotion render src/index.ts KonusmaKurgu cikti/konusma_kurgu.mp4 --crf=18",
-    "render:duru": "python3 duru_ses.py && remotion render src/index.ts DuruKampanya cikti/duru_kampanya.mp4 --crf=18"
+    "render:duru": "python3 duru_ses.py && remotion render src/index.ts DuruKampanya cikti/duru_kampanya.mp4 --crf=18",
+    "render:diyet": "python3 diyet_ses.py && python3 iyilestir.py public/diyet/ham.mp4 public/diyet/iyi.mp4 --karisim 0.75 && remotion render src/index.ts DiyetKurgu cikti/diyet_kurgu.mp4 --crf=18"
   },
   "dependencies": {
     "@fontsource/cinzel": "^5.1.0",
