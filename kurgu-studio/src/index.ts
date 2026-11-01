@@ -5,6 +5,7 @@ import { Umre, UMRE_TOPLAM } from "./Umre";
 import { Konusma, KONUSMA_TOPLAM } from "./Konusma";
 import { Duru, DURU_TOPLAM } from "./Duru";
 import { Diyet, DIYET_TOPLAM } from "./Diyet";
+import { Ilahi, ILAHI_TOPLAM } from "./Ilahi";
 import { FPS, GENISLIK, TOPLAM, YUKSEKLIK } from "./zaman";
 
 const Kok: React.FC = () =>
@@ -51,6 +52,14 @@ const Kok: React.FC = () =>
       width: GENISLIK,
       height: YUKSEKLIK,
       defaultProps: { kaynak: "diyet/iyi.mp4" },
+    }),
+    React.createElement(Composition, {
+      id: "IlahiAltyazi",
+      component: Ilahi,
+      durationInFrames: ILAHI_TOPLAM,
+      fps: FPS,
+      width: GENISLIK,
+      height: YUKSEKLIK,
     }),
   );
 
